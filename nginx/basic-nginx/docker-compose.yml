@@ -6,4 +6,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - /etc/nginx
+      - nginxvolume:/etc/nginx
+
+volumes:
+ nginxvolume:
